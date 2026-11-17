@@ -1,0 +1,1287 @@
+{
+  "version": "NordVPN Version 6.0.2",
+  "tree": {
+    "command": "nordvpn",
+    "name": "nordvpn",
+    "aliases": [],
+    "usage": "",
+    "options": [
+      {
+        "flags": "--help, -h",
+        "description": "Show help"
+      },
+      {
+        "flags": "--version, -v",
+        "description": "Print the version"
+      }
+    ],
+    "subcommands": [
+      {
+        "command": "nordvpn account",
+        "name": "account",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows account information"
+      },
+      {
+        "command": "nordvpn cities",
+        "name": "cities",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows a list of cities where servers are available"
+      },
+      {
+        "command": "nordvpn connect",
+        "name": "connect",
+        "aliases": [
+          "c"
+        ],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--group value, -g value",
+            "description": "Specify a server group to connect to"
+          },
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Connects you to VPN"
+      },
+      {
+        "command": "nordvpn countries",
+        "name": "countries",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows a list of countries where servers are available."
+      },
+      {
+        "command": "nordvpn disconnect",
+        "name": "disconnect",
+        "aliases": [
+          "d"
+        ],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Disconnects you from VPN"
+      },
+      {
+        "command": "nordvpn groups",
+        "name": "groups",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows a list of available server groups"
+      },
+      {
+        "command": "nordvpn login",
+        "name": "login",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--callback",
+            "description": "Complete the login manually if your browser fails to open the app. After you successfully log in on your browser, copy the link of the \"Continue\" button and paste it enclosed in quotation marks as an argument for this option. (default: false)"
+          },
+          {
+            "flags": "--token",
+            "description": "Log in to NordVPN by using a token generated in your Nord Account. This login option doesn't support multi-factor authentication. Tokens are revoked at logout. Use \"nordvpn logout --help\" for more info. (default: false)"
+          },
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Logs you in"
+      },
+      {
+        "command": "nordvpn logout",
+        "name": "logout",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--revoke-token",
+            "description": "Revoke your long living token after logging out (default: false)"
+          },
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Logs you out"
+      },
+      {
+        "command": "nordvpn rate",
+        "name": "rate",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Rates your last connection quality (1-5)"
+      },
+      {
+        "command": "nordvpn register",
+        "name": "register",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Registers a new user account"
+      },
+      {
+        "command": "nordvpn set",
+        "name": "set",
+        "aliases": [
+          "s"
+        ],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [
+          {
+            "command": "nordvpn set autoconnect",
+            "name": "autoconnect",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--group value, -g value",
+                "description": "Specify a server group to connect to"
+              },
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables auto-connect. When enabled, this feature will automatically try to connect to VPN on operating system startup."
+          },
+          {
+            "command": "nordvpn set protection",
+            "name": "protection",
+            "aliases": [
+              "protect"
+            ],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Use this command to turn real-time protection on or off. Real-time protection blocks scam and phishing attempts and reduces intrusive ads while you\u2019re connected to the VPN. Learn more about how it works: https://nordvpn.com/features/threat-protection/?utm_medium=app&utm_source=nordvpn-linux-cli&utm_campaign=settings-explore_threat_protection&nm=app&ns=nordvpn-linux-cli&nc=settings-explore_threat_protection."
+          },
+          {
+            "command": "nordvpn set defaults",
+            "name": "defaults",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--logout",
+                "description": "Log out after restoring settings to their default values. Example: nordvpn set defaults --logout (default: false)"
+              },
+              {
+                "flags": "--off-killswitch",
+                "description": "Turn off Kill Switch when restoring settings to their default values. Example: nordvpn set defaults --off-killswitch (default: false)"
+              },
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Restores settings to their default values."
+          },
+          {
+            "command": "nordvpn set dns",
+            "name": "dns",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Sets custom DNS servers"
+          },
+          {
+            "command": "nordvpn set firewall",
+            "name": "firewall",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables use of the firewall."
+          },
+          {
+            "command": "nordvpn set fwmark",
+            "name": "fwmark",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Traffic control filter used in policy-based routing. It allows classifying packets based on a previously set fwmark by the firewall."
+          },
+          {
+            "command": "nordvpn set routing",
+            "name": "routing",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Allows routing traffic through VPN servers and peer devices in Meshnet. This setting must be enabled to send your traffic through a VPN server or a peer device. If the setting is disabled, the app will only initiate necessary connections to a VPN server or a peer device but won\u2019t start traffic routing."
+          },
+          {
+            "command": "nordvpn set analytics",
+            "name": "analytics",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Help us improve by sending anonymous aggregate data: crash reports, OS version, marketing performance, and feature usage data \u2013 nothing that could identify you."
+          },
+          {
+            "command": "nordvpn set killswitch",
+            "name": "killswitch",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables Kill Switch. This security feature blocks your device from accessing the Internet while not connected to the VPN or in case connection with a VPN server is lost."
+          },
+          {
+            "command": "nordvpn set notify",
+            "name": "notify",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables notifications"
+          },
+          {
+            "command": "nordvpn set tray",
+            "name": "tray",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables the NordVPN icon in the system tray. The icon provides quick access to basic controls and your VPN status details."
+          },
+          {
+            "command": "nordvpn set protocol",
+            "name": "protocol",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Sets the VPN protocol"
+          },
+          {
+            "command": "nordvpn set lan-discovery",
+            "name": "lan-discovery",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Access printers, TVs, and other devices on your local network while connected to a VPN."
+          },
+          {
+            "command": "nordvpn set post-quantum",
+            "name": "post-quantum",
+            "aliases": [
+              "pq"
+            ],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables post-quantum encryption. When enabled, the encryption protects your VPN connection against potential quantum computer attacks."
+          },
+          {
+            "command": "nordvpn set Note: Currently",
+            "name": "Note: Currently",
+            "aliases": [
+              "post-quantum encryption works only with standard NordLynx servers",
+              "so it won\u2019t activate when you use a dedicated IP",
+              "OpenVPN or NordWhisper."
+            ],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": ""
+          },
+          {
+            "command": "nordvpn set The feature is not compatible with Meshnet.",
+            "name": "The feature is not compatible with Meshnet.",
+            "aliases": [],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": ""
+          },
+          {
+            "command": "nordvpn set arp-ignore",
+            "name": "arp-ignore",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Controls whether your device ignores or responds to ARP requests while the VPN is active."
+          },
+          {
+            "command": "nordvpn set By default",
+            "name": "By default",
+            "aliases": [
+              "arp-ignore is on. This means ARP requests are ignored to prevent VPN exposure."
+            ],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": ""
+          },
+          {
+            "command": "nordvpn set meshnet",
+            "name": "meshnet",
+            "aliases": [
+              "mesh"
+            ],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [],
+            "description": "Enables or disables Meshnet on this device."
+          }
+        ],
+        "description": "Sets a configuration option"
+      },
+      {
+        "command": "nordvpn settings",
+        "name": "settings",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows current settings"
+      },
+      {
+        "command": "nordvpn status",
+        "name": "status",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows connection status"
+      },
+      {
+        "command": "nordvpn version",
+        "name": "version",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Shows daemon version"
+      },
+      {
+        "command": "nordvpn allowlist",
+        "name": "allowlist",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [
+          {
+            "command": "nordvpn allowlist add",
+            "name": "add",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [
+              {
+                "command": "nordvpn allowlist add port",
+                "name": "port",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Adds port to the allowlist"
+              },
+              {
+                "command": "nordvpn allowlist add ports",
+                "name": "ports",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Adds port range to the allowlist"
+              },
+              {
+                "command": "nordvpn allowlist add subnet",
+                "name": "subnet",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Adds subnet to the allowlist"
+              }
+            ],
+            "description": "Adds an option to the allowlist"
+          },
+          {
+            "command": "nordvpn allowlist remove",
+            "name": "remove",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [
+              {
+                "command": "nordvpn allowlist remove all",
+                "name": "all",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Removes all ports and subnets from the allowlist"
+              },
+              {
+                "command": "nordvpn allowlist remove port",
+                "name": "port",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Removes port from the allowlist"
+              },
+              {
+                "command": "nordvpn allowlist remove ports",
+                "name": "ports",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Removes port range from the allowlist"
+              },
+              {
+                "command": "nordvpn allowlist remove subnet",
+                "name": "subnet",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Removes subnet from the allowlist"
+              }
+            ],
+            "description": "Removes an option from the allowlist"
+          }
+        ],
+        "description": "Specify ports, port ranges, or subnets to exclude from VPN protection. Allowlisted ports may accept incoming connections from any external source outside your network."
+      },
+      {
+        "command": "nordvpn pause",
+        "name": "pause",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Pauses your VPN connection for a specified duration. Available durations are 5m, 15m, 30m, 1h, and 24h. To resume before the timer expires, use the \"nordvpn connect\" command."
+      },
+      {
+        "command": "nordvpn diagnostics",
+        "name": "diagnostics",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [],
+        "description": "Collects diagnostic logs and system information for troubleshooting. Share the generated file with NordVPN support to investigate the issue."
+      },
+      {
+        "command": "nordvpn meshnet",
+        "name": "meshnet",
+        "aliases": [
+          "mesh"
+        ],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [
+          {
+            "command": "nordvpn meshnet peer",
+            "name": "peer",
+            "aliases": [],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [
+              {
+                "command": "nordvpn meshnet peer list",
+                "name": "list",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--filter value, -f value",
+                    "description": "Filters list of available peers in a Meshnet. To apply multiple filters, separate them with a comma. Please note that you will see an empty list if you apply contradictory filters."
+                  },
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Lists available peers in a Meshnet."
+              },
+              {
+                "command": "nordvpn meshnet peer remove",
+                "name": "remove",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Removes a peer from a Meshnet."
+              },
+              {
+                "command": "nordvpn meshnet peer refresh",
+                "name": "refresh",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Refreshes the Meshnet in case it was not updated automatically."
+              },
+              {
+                "command": "nordvpn meshnet peer incoming",
+                "name": "incoming",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [
+                  {
+                    "command": "nordvpn meshnet peer incoming allow",
+                    "name": "allow",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Allows a Meshnet peer to send traffic to this device."
+                  },
+                  {
+                    "command": "nordvpn meshnet peer incoming deny",
+                    "name": "deny",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Denies a Meshnet peer to send traffic to this device."
+                  }
+                ],
+                "description": "Allows/denies a peer device to access this device remotely (incoming connections)."
+              },
+              {
+                "command": "nordvpn meshnet peer routing",
+                "name": "routing",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [
+                  {
+                    "command": "nordvpn meshnet peer routing allow",
+                    "name": "allow",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Allows a Meshnet peer to route its' traffic through this device."
+                  },
+                  {
+                    "command": "nordvpn meshnet peer routing deny",
+                    "name": "deny",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Denies a Meshnet peer to route its' traffic through this device."
+                  }
+                ],
+                "description": "Allows/denies a peer device to route all traffic through this device."
+              },
+              {
+                "command": "nordvpn meshnet peer local",
+                "name": "local",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [
+                  {
+                    "command": "nordvpn meshnet peer local allow",
+                    "name": "allow",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Allows a Meshnet peer to access local network when routing traffic through this device."
+                  },
+                  {
+                    "command": "nordvpn meshnet peer local deny",
+                    "name": "deny",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Denies a Meshnet peer to access local network when routing traffic through this device."
+                  }
+                ],
+                "description": "Allows/denies access to your local network when a peer device is routing traffic through this device."
+              },
+              {
+                "command": "nordvpn meshnet peer fileshare",
+                "name": "fileshare",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [
+                  {
+                    "command": "nordvpn meshnet peer fileshare allow",
+                    "name": "allow",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Allows a Meshnet peer to send files to this device."
+                  },
+                  {
+                    "command": "nordvpn meshnet peer fileshare deny",
+                    "name": "deny",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Denies a Meshnet peer to send files to this device."
+                  }
+                ],
+                "description": "Allows/denies peer to send files to this device."
+              },
+              {
+                "command": "nordvpn meshnet peer auto-accept",
+                "name": "auto-accept",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [
+                  {
+                    "command": "nordvpn meshnet peer auto-accept enable",
+                    "name": "enable",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Enables automatic fileshare from device."
+                  },
+                  {
+                    "command": "nordvpn meshnet peer auto-accept disable",
+                    "name": "disable",
+                    "aliases": [],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Denies automatic fileshare from device."
+                  }
+                ],
+                "description": "Always accept file transfers from a specific peer. We won\u2019t ask you to approve each transfer - files will start downloading automatically."
+              },
+              {
+                "command": "nordvpn meshnet peer connect",
+                "name": "connect",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Treats a peer as a VPN server and connects to it if the peer has allowed traffic routing."
+              },
+              {
+                "command": "nordvpn meshnet peer nickname",
+                "name": "nickname",
+                "aliases": [
+                  "nick"
+                ],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [
+                  {
+                    "command": "nordvpn meshnet peer nickname set",
+                    "name": "set",
+                    "aliases": [
+                      "s"
+                    ],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Sets a nickname for the specified peer device."
+                  },
+                  {
+                    "command": "nordvpn meshnet peer nickname remove",
+                    "name": "remove",
+                    "aliases": [
+                      "r"
+                    ],
+                    "usage": "",
+                    "options": [
+                      {
+                        "flags": "--help, -h",
+                        "description": "Show help"
+                      }
+                    ],
+                    "subcommands": [],
+                    "description": "Removes the nickname currently set for the specified peer device."
+                  }
+                ],
+                "description": "Sets/removes a peer device nickname within Meshnet."
+              }
+            ],
+            "description": "Manage Meshnet peers."
+          },
+          {
+            "command": "nordvpn meshnet invite",
+            "name": "invite",
+            "aliases": [
+              "inv"
+            ],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [
+              {
+                "command": "nordvpn meshnet invite list",
+                "name": "list",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Displays the list of all sent and received Meshnet invitations."
+              },
+              {
+                "command": "nordvpn meshnet invite send",
+                "name": "send",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--allow-incoming-traffic",
+                    "description": "Allow incoming traffic from a peer. (default: false)"
+                  },
+                  {
+                    "flags": "--allow-traffic-routing",
+                    "description": "Allow the peer to route traffic through this device. (default: false)"
+                  },
+                  {
+                    "flags": "--allow-local-network-access",
+                    "description": "Allow the peer to access local network when routing traffic through this device. (default: false)"
+                  },
+                  {
+                    "flags": "--allow-peer-send-files",
+                    "description": "Allow the peer to send you files. (default: false)"
+                  },
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Sends an invitation to join the mesh network."
+              },
+              {
+                "command": "nordvpn meshnet invite accept",
+                "name": "accept",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--allow-incoming-traffic",
+                    "description": "Allow incoming traffic from a peer. (default: false)"
+                  },
+                  {
+                    "flags": "--allow-traffic-routing",
+                    "description": "Allow the peer to route traffic through this device. (default: false)"
+                  },
+                  {
+                    "flags": "--allow-local-network-access",
+                    "description": "Allow the peer to access local network when routing traffic through this device. (default: false)"
+                  },
+                  {
+                    "flags": "--allow-peer-send-files",
+                    "description": "Allow the peer to send you files. (default: false)"
+                  },
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Accepts an invitation to join inviter's mesh network."
+              },
+              {
+                "command": "nordvpn meshnet invite deny",
+                "name": "deny",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Denies an invitation to join inviter's mesh network."
+              },
+              {
+                "command": "nordvpn meshnet invite revoke",
+                "name": "revoke",
+                "aliases": [],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Revokes a sent invitation."
+              }
+            ],
+            "description": "Add other users' devices to your Meshnet."
+          },
+          {
+            "command": "nordvpn meshnet set",
+            "name": "set",
+            "aliases": [
+              "s"
+            ],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [
+              {
+                "command": "nordvpn meshnet set nickname",
+                "name": "nickname",
+                "aliases": [
+                  "nick"
+                ],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Sets a nickname for this machine within Meshnet."
+              }
+            ],
+            "description": "Set a Meshnet configuration option."
+          },
+          {
+            "command": "nordvpn meshnet remove",
+            "name": "remove",
+            "aliases": [
+              "r"
+            ],
+            "usage": "",
+            "options": [
+              {
+                "flags": "--help, -h",
+                "description": "Show help"
+              }
+            ],
+            "subcommands": [
+              {
+                "command": "nordvpn meshnet remove nickname",
+                "name": "nickname",
+                "aliases": [
+                  "nick"
+                ],
+                "usage": "",
+                "options": [
+                  {
+                    "flags": "--help, -h",
+                    "description": "Show help"
+                  }
+                ],
+                "subcommands": [],
+                "description": "Removes the nickname currently set for this machine within Meshnet."
+              }
+            ],
+            "description": "Remove a Meshnet configuration option."
+          }
+        ],
+        "description": "Meshnet is a way to safely access other devices, no matter where in the world they are. Once set up, Meshnet functions just like a secure local area network (LAN) \u2014 it connects devices directly. It also allows securely sending files to other devices. Use the \"nordvpn set meshnet on\" command to enable Meshnet. Learn more: https://meshnet.nordvpn.com/?utm_medium=app&utm_source=nordvpn-linux-cli&utm_campaign=meshnet-documentation&nm=app&ns=nordvpn-linux-cli&nc=meshnet-documentation"
+      },
+      {
+        "command": "nordvpn fileshare",
+        "name": "fileshare",
+        "aliases": [],
+        "usage": "",
+        "options": [
+          {
+            "flags": "--help, -h",
+            "description": "Show help"
+          }
+        ],
+        "subcommands": [
+          {
+            "command": "nordvpn fileshare send",
+            "name": "send",
+            "aliases": [],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": "Send files or directories to a Meshnet peer."
+          },
+          {
+            "command": "nordvpn fileshare accept",
+            "name": "accept",
+            "aliases": [],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": "Accept an incoming file transfer. To download an entire transfer, specify the transfer ID. To download a single file, specify the transfer ID and the file ID."
+          },
+          {
+            "command": "nordvpn fileshare list",
+            "name": "list",
+            "aliases": [],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": "Lists transfers. If transfer ID is provided, lists files in the transfer."
+          },
+          {
+            "command": "nordvpn fileshare cancel",
+            "name": "cancel",
+            "aliases": [],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": "Cancel a transfer or a single file. To cancel an entire transfer, specify the transfer ID. To cancel a single file, specify the transfer ID and the file ID."
+          },
+          {
+            "command": "nordvpn fileshare clear",
+            "name": "clear",
+            "aliases": [],
+            "usage": "",
+            "options": [],
+            "subcommands": [],
+            "description": "Clear entries older than the specified time period from the file transfer history."
+          }
+        ],
+        "description": "Transfer files of any size between Meshnet peers securely and privately"
+      }
+    ]
+  }
+}
